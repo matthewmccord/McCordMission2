@@ -1,8 +1,8 @@
 ﻿$("#Grade_Calc").click(function () {
     //checknum = "100.04"
     //check = parseFloat(checknum)
-    final_grade = $("#assignments") * 0.55 + $("#quizzes") * 0.10
-    /*parseFloat($("#group_project").val()) * 0.05 + parseFloat($("#exams").val()) * 0.20 + parseFloat($("#intex").val())*0.10*/
+    final_grade = ($("#assignments").val()) * 0.55 + ($("#quizzes").val()) * 0.10 + 
+    ($("#group_project").val()) * 0.05 + ($("#exams").val()) * 0.20 + ($("#intex").val()) * 0.10
     if (final_grade >= 94) {
         letter_grade = 'A'
     }
@@ -39,5 +39,5 @@
     else {
         letter_grade = 'E You Failed. Sorry :('
     }
-    alert(letter_grade)
+    document.getElementById("Output").innerHTML = "Your grade is: " + letter_grade
 })
