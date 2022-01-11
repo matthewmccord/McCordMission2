@@ -1,6 +1,4 @@
 ﻿$("#Grade_Calc").click(function () {
-    //checknum = "100.04"
-    //check = parseFloat(checknum)
     final_grade = ($("#assignments").val()) * 0.55 + ($("#quizzes").val()) * 0.10 + 
     ($("#group_project").val()) * 0.05 + ($("#exams").val()) * 0.20 + ($("#intex").val()) * 0.10
     if (final_grade >= 94) {
